@@ -103,9 +103,9 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 INSERT INTO `dock` VALUES
-('HK','Hoàn Kiếm','Hà Nội','20 Lê Thánh Tông, Phường Phan Chu Trinh, Quận Hoàn Kiếm',27,30),
-('HM','Hoàng Mai','Hai Bà Trưng','21 Lê Trọng Tấn, Phường Định Công, Quận Hoàng Mai',27,30),
-('HBT','Hai Bà Trưng','Hà Nội','295 Đường Bạch Mai, Phường Bạch Mai, Quận Hai Bà Trưng',27,30);
+('DD','Đống Đa','Hà Nội','361 Nguyễn Trãi, Phường Khương Trung, Quận Đống Đa',27,30),
+('HM','Hoàng Mai','Hà Nội','13 Lĩnh Nam, Phường Vĩnh Hưng, Quận Hoàng Mai',27,30),
+('HBT','Hai Bà Trưng','Hà Nội','1 Đại Cồ Việt, Phường Bách Khoa, Quận Hai Bà Trưng',27,30);
 
 INSERT INTO `bike` VALUES
 (20210000,'single-normal',1,2,1,null,null,0,1000000,'HK-001','HK'),
