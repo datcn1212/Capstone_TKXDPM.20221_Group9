@@ -3,22 +3,22 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema ecoBikeN2
+-- Schema ECOBIKE
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `ecoBikeN2`;
+DROP SCHEMA IF EXISTS `ECOBIKE`;
 
 -- -----------------------------------------------------
--- Schema ecoBikeN2
+-- Schema ECOBIKE
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `ecoBikeN2` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
-USE `ecoBikeN2` ;
+CREATE SCHEMA IF NOT EXISTS `ECOBIKE` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+USE `ECOBIKE` ;
 
 
 -- -----------------------------------------------------
--- Table `ecoBikeN2`.`Dock`
+-- Table `ECOBIKE`.`Dock`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `ecoBikeN2`.`Dock` ;
-CREATE TABLE IF NOT EXISTS `ecoBikeN2`.`Dock` (
+DROP TABLE IF EXISTS `ECOBIKE`.`Dock` ;
+CREATE TABLE IF NOT EXISTS `ECOBIKE`.`Dock` (
   `dockID` CHAR(15) NOT NULL,
   `name` VARCHAR(50) NOT NULL,
   `area` VARCHAR(50) NOT NULL,
@@ -31,10 +31,10 @@ DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
 -- -----------------------------------------------------
--- Table `ecoBikeN2`.`Bike`
+-- Table `ECOBIKE`.`Bike`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `ecoBikeN2`.`Bike` ;
-CREATE TABLE IF NOT EXISTS `ecoBikeN2`.`Bike` (
+DROP TABLE IF EXISTS `ECOBIKE`.`Bike` ;
+CREATE TABLE IF NOT EXISTS `ECOBIKE`.`Bike` (
   `bikeID` INT(15) NOT NULL,
   `type` VARCHAR(50) NOT NULL,
   `numSaddle` INT(15) NOT NULL,
@@ -49,18 +49,18 @@ CREATE TABLE IF NOT EXISTS `ecoBikeN2`.`Bike` (
   PRIMARY KEY (`bikeID`),
   CONSTRAINT `DockID`
     FOREIGN KEY (`DockID`)
-    REFERENCES `ecoBikeN2`.`Dock` (`DockID`))
+    REFERENCES `ECOBIKE`.`Dock` (`DockID`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `ecoBikeN2`.`RentBikeInvoice`
+-- Table `ECOBIKE`.`RentBikeInvoice`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `ecoBikeN2`.`RentBikeInvoice` ;
+DROP TABLE IF EXISTS `ECOBIKE`.`RentBikeInvoice` ;
 
-CREATE TABLE IF NOT EXISTS `ecoBikeN2`.`RentBikeInvoice` (
+CREATE TABLE IF NOT EXISTS `ECOBIKE`.`RentBikeInvoice` (
   `rentalCode` VARCHAR(50) NOT NULL,
   `bikeID` INT(15) NOT NULL,
   `type` VARCHAR(50) NOT NULL,
@@ -72,17 +72,17 @@ CREATE TABLE IF NOT EXISTS `ecoBikeN2`.`RentBikeInvoice` (
   PRIMARY KEY (`rentalCode`),
   CONSTRAINT `bikeID`
     FOREIGN KEY (`bikeID`)
-    REFERENCES `ecoBikeN2`.`Bike` (`bikeID`))
+    REFERENCES `ECOBIKE`.`Bike` (`bikeID`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
 -- -----------------------------------------------------
--- Table `ecoBikeN2`.`PaymentTransaction`
+-- Table `ECOBIKE`.`PaymentTransaction`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `ecoBikeN2`.`PaymentTransaction` ;
+DROP TABLE IF EXISTS `ECOBIKE`.`PaymentTransaction` ;
 
-CREATE TABLE IF NOT EXISTS `ecoBikeN2`.`PaymentTransaction` (
+CREATE TABLE IF NOT EXISTS `ECOBIKE`.`PaymentTransaction` (
   `ID` INT NOT NULL,
   `owner` VARCHAR(50) NOT NULL,
   `transactionContent` VARCHAR(50) NOT NULL,
@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `ecoBikeN2`.`PaymentTransaction` (
   PRIMARY KEY (`ID`),
   CONSTRAINT `rentalCode`
     FOREIGN KEY (`rentalCode`)
-    REFERENCES `ecoBikeN2`.`RentBikeInvoice` (`rentalCode`))
+    REFERENCES `ECOBIKE`.`RentBikeInvoice` (`rentalCode`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
@@ -108,15 +108,15 @@ INSERT INTO `dock` VALUES
 ('HBT','Hai Bà Trưng','Hà Nội','1 Đại Cồ Việt, Phường Bách Khoa, Quận Hai Bà Trưng',27,30);
 
 INSERT INTO `bike` VALUES
-(20210000,'single-normal',1,2,1,null,null,0,1000000,'HK-001','HK'),
-(20210001,'double-normal',2,4,1,null,null,0,1375000,'HK-002','HK'),
-(20210002,'single-electric',1,0,1,92.1,60,0,1750000,'HK-003','HK'),
-(20210003,'single-normal',1,2,1,null,null,0,1000000,'HM-001','HM'),
-(20210004,'double-normal',2,4,1,null,null,0,1375000,'HM-002','HM'),
-(20210005,'single-electric',1,0,1,92.1,60,0,1750000,'HM-003','HM'),
-(20210006,'single-normal',1,2,1,null,null,0,1000000,'HBT-001','HBT'),
-(20210007,'double-normal',2,4,1,null,null,0,1375000,'HBT-002','HBT'),
-(20210008,'single-electric',1,0,1,92.1,60,0,1750000,'HBT-003','HBT');
+(20230000,'single-normal',1,2,1,null,null,0,1000000,'DD-001','DD'),
+(20230001,'double-normal',2,4,1,null,null,0,1375000,'DD-002','DD'),
+(20230002,'single-electric',1,0,1,92.1,60,0,1750000,'DD-003','DD'),
+(20230003,'single-normal',1,2,1,null,null,0,1000000,'HM-001','HM'),
+(20230004,'double-normal',2,4,1,null,null,0,1375000,'HM-002','HM'),
+(20230005,'single-electric',1,0,1,92.1,60,0,1750000,'HM-003','HM'),
+(20230006,'single-normal',1,2,1,null,null,0,1000000,'HBT-001','HBT'),
+(20230007,'double-normal',2,4,1,null,null,0,1375000,'HBT-002','HBT'),
+(20230008,'single-electric',1,0,1,92.1,60,0,1750000,'HBT-003','HBT');
 
 
 
