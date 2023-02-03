@@ -3,7 +3,7 @@ package entity.data;
 import java.util.ArrayList;
 
 /**
- * @author duydc
+ * @author hdb
  *
  */
 public class RentBikeInvoiceDAO {

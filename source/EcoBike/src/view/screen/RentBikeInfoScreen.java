@@ -20,7 +20,7 @@ import util.Constants;
 import view.screen.box.NotificationBox;
 
 /**
- * @author duydc
+ * @author hdb
  *
  */
 public class RentBikeInfoScreen implements Initializable {

@@ -1,7 +1,7 @@
 package subsystem.barcodeconverter.api;
 
 /**
- * @author duydc
+ * @author hdb
  *
  */
 public interface Message {

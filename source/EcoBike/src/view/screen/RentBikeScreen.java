@@ -19,7 +19,7 @@ import util.Constants;
 import view.screen.box.NotificationBox;
 
 /**
- * @author anvd
+ * @author hdb
  *
  */
 public class RentBikeScreen {

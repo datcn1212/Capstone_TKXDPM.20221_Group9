@@ -6,7 +6,7 @@ import entity.CreditCard;
 import util.HTTPBinder;
 
 /**
- * @author anvd
+ * @author hdb
  *
  */
 public class ResetTransaction implements Message {

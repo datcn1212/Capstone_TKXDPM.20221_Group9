@@ -21,7 +21,7 @@ import util.Constants;
 import view.screen.box.NotificationBox;
 
 /**
- * @author anvd
+ * @author hdb
  *
  */
 public class MainScreen implements Initializable {

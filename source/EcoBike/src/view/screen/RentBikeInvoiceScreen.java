@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 import util.Constants;
 
 /**
- * @author duydc
+ * @author hdb
  *
  */
 public class RentBikeInvoiceScreen {

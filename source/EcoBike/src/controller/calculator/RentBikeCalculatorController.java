@@ -2,7 +2,7 @@ package controller.calculator;
 
 /**
  * A class to handle calculating rent bike cost
- * @author longld
+ * @author hdb
  *
  */
 public class RentBikeCalculatorController {

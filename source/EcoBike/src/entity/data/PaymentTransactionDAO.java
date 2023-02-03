@@ -3,7 +3,7 @@ package entity.data;
 import util.Constants;
 
 /**
- * @author anvd
+ * @author hdb
  *
  */
 public class PaymentTransactionDAO {

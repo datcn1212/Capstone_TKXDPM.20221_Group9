@@ -4,7 +4,7 @@ import entity.CreditCard;
 
 
 /**
- * @author anvd
+ * @author hdb
  *
  */
 public interface IInterbank {

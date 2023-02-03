@@ -2,7 +2,7 @@ package entity;
 
 /**
  * Class for further usages
- * @author anvd
+ * @author hdb
  *
  */
 public class DomesticCard extends GenericCard{

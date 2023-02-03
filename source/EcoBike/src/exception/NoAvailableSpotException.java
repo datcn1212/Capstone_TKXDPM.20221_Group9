@@ -1,7 +1,7 @@
 package exception;
 
 /**
- * @author duydc
+ * @author hdb
  *
  */
 

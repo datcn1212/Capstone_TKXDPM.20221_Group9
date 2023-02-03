@@ -7,7 +7,7 @@ import entity.data.BikeDAO;
 import java.util.ArrayList;
 
 /**
- * @author longld
+ * @author hdb
  *
  */
 public class DockController {

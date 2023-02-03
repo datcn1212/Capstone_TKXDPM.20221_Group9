@@ -11,7 +11,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
- * @author longld
+ * @author hdb
  *
  */
 public class ConfirmBox {

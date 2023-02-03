@@ -3,7 +3,7 @@ package entity.data;
 import java.util.ArrayList;
 
 /**
- * @author longld
+ * @author hdb
  *
  */
 public class DockDAO {

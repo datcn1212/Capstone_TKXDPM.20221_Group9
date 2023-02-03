@@ -1,7 +1,7 @@
 package util;
 
 /**
- * @author longld
+ * @author hdb
  * holds constants for all system
  *
  */

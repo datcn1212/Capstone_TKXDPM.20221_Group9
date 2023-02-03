@@ -7,13 +7,13 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 /**
- * @author duydc
+ * @author hdb
  *
  */
 public class DBBinder {
-	private static final String DB_URL = "jdbc:mysql://localhost:3306/ecoBikeN2";
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/ecobike";
 	private static final String USER_NAME = "root";
-	private static final String PASSWORD = "123456";
+	private static final String PASSWORD = "";
 	private static Connection connection = getConnection();
 
 	/**
