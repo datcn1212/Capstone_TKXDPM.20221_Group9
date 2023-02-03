@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class DBBinder {
 	private static final String DB_URL = "jdbc:mysql://localhost:3306/ecoBikeN2";
 	private static final String USER_NAME = "root";
-	private static final String PASSWORD = "";
+	private static final String PASSWORD = "123456";
 	private static Connection connection = getConnection();
 
 	/**
