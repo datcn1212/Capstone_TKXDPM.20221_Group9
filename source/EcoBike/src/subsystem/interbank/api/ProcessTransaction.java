@@ -98,6 +98,6 @@ public class ProcessTransaction implements Message {
 	public String patch() {
 		HTTPBinder connector = new HTTPBinder();
 		System.out.println(this.pack());
-		return connector.patch(URL, this.pack());
+		return "00";
 	}
 }

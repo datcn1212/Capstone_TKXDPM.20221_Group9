@@ -8,7 +8,7 @@ public class CreditCard extends GenericCard{
 	/**
 	 * static variable holds the card
 	 */
-	private static CreditCard card = new CreditCard("kstn_group2_2021", "Group 2", "494", "1125");
+	private static CreditCard card = new CreditCard("kstn_group9_2023", "Group 9", "777", "1231");
 	/**
 	 * code of card
 	 */

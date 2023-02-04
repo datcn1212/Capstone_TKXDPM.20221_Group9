@@ -23,7 +23,12 @@ public class DBBinder {
 		Connection conn = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(DB_URL, USER_NAME, PASSWORD);
+			try {
+				conn = DriverManager.getConnection(DB_URL, USER_NAME, PASSWORD);
+			}
+			catch (Exception ex) {
+				conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/ecobike", "root", "123456");
+			}
 			System.out.println("connect successfully!");
 		} catch (Exception ex) {
 			System.out.println("connect failure!");

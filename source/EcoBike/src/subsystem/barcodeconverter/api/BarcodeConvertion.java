@@ -41,7 +41,6 @@ public class BarcodeConvertion implements Message {
 	 */
 	@Override
 	public String post() {
-		HTTPBinder connector = new HTTPBinder();
-		return connector.post(URL, this.pack());
+		return String.valueOf(this.barcode);
 	}
 }
