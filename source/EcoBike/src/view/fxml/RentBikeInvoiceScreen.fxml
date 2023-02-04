@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -13,7 +18,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: Green;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.RentBikeInvoiceScreen">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: #00a13f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.RentBikeInvoiceScreen">
    <bottom>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="© EcoBike 2023" textAlignment="CENTER" wrappingWidth="306.1025390625" BorderPane.alignment="CENTER">
          <font>
@@ -27,16 +32,16 @@
    <left>
       <VBox prefHeight="474.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane prefHeight="575.0" prefWidth="547.0" style="-fx-background-color: green;">
+            <AnchorPane prefHeight="575.0" prefWidth="547.0" style="-fx-background-color: #00a13f;">
                <children>
                   <Label alignment="CENTER" layoutX="1.0" prefHeight="70.0" prefWidth="720.0" style="-fx-background-color: Green;" text="Transaction Information">
                      <font>
                         <Font name="Calibri" size="32.0" />
                      </font>
                   </Label>
-                  <Button fx:id="OK" layoutX="536.0" layoutY="533.0" mnemonicParsing="false" onAction="#processOKClick" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: LIME;" text="OK">
+                  <Button fx:id="OK" layoutX="434.0" layoutY="525.0" mnemonicParsing="false" onAction="#processOKClick" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: LIME;" text="OK">
                      <font>
-                        <Font name="Calibri" size="12.0" />
+                        <Font name="Calibri" size="19.0" />
                      </font></Button>
                   <GridPane layoutX="101.0" layoutY="90.0" prefHeight="417.0" prefWidth="530.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="-74.0" AnchorPane.topAnchor="90.0">
                     <columnConstraints>
@@ -56,85 +61,85 @@
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rental code:" wrappingWidth="142.515625">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font></Text>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bike ID:" wrappingWidth="134.484375" GridPane.rowIndex="1">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font></Text>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type:" wrappingWidth="132.234375" GridPane.rowIndex="2">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font></Text>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Owner:" GridPane.rowIndex="3">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font></Text>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rent time:" wrappingWidth="233.0078125" GridPane.rowIndex="4">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font></Text>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Return time:" wrappingWidth="197.109375" GridPane.rowIndex="5">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font></Text>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit:" wrappingWidth="187.8828125" GridPane.rowIndex="6">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font></Text>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rent cost :" wrappingWidth="187.8828125" GridPane.rowIndex="7">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font></Text>
                         <Label GridPane.columnIndex="1">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font></Label>
                         <Label fx:id="rentalCode" text="202300000" GridPane.columnIndex="1">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font>
                         </Label>
                         <Label fx:id="bikeCode" text="20230000" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font>
                         </Label>
                         <Label fx:id="type" text="single-normal" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font>
                         </Label>
                         <Label fx:id="owner" text="owner" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font>
                         </Label>
                         <Label fx:id="rentTime" text="rent time" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font>
                         </Label>
                         <Label fx:id="returnTime" text="return time" GridPane.columnIndex="1" GridPane.rowIndex="5">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font>
                         </Label>
                         <Label fx:id="deposit" text="400000" GridPane.columnIndex="1" GridPane.rowIndex="6">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font>
                         </Label>
                         <Label fx:id="rentCost" text="100000" GridPane.columnIndex="1" GridPane.rowIndex="7">
                            <font>
-                              <Font name="Calibri" size="18.0" />
+                              <Font name="Calibri" size="25.0" />
                            </font>
                         </Label>
                      </children>
                   </GridPane>
-                  <Text layoutX="39.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Information" textAlignment="CENTER" wrappingWidth="267.515625">
+                  <Text layoutX="67.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Information" textAlignment="CENTER" wrappingWidth="267.515625">
                      <font>
-                        <Font name="Calibri" size="19.0" />
+                        <Font name="Calibri" size="24.0" />
                      </font>
                   </Text>
                </children>
