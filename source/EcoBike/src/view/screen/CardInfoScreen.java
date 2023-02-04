@@ -22,7 +22,7 @@ import util.HandleException;
 import view.screen.box.NotificationBox;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class CardInfoScreen implements Initializable {

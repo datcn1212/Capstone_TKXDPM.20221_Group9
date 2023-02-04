@@ -1,7 +1,7 @@
 package subsystem.barcodeconverter;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public interface IBarcodeConverter {

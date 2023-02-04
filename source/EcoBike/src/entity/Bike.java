@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import entity.data.BikeDAO;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public abstract class Bike {

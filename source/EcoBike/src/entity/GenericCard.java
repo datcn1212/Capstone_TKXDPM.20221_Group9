@@ -2,7 +2,7 @@ package entity;
 
 /**
  * An abstract class for card for open/closed principle
- * @author hdb
+ * @author baonn
  *
  */
 public abstract class GenericCard {

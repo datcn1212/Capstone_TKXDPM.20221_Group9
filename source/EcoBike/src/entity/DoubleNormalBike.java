@@ -3,7 +3,7 @@ package entity;
 import java.util.ArrayList;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class DoubleNormalBike extends Bike {

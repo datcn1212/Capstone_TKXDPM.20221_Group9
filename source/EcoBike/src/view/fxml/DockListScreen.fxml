@@ -15,7 +15,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: Green;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.DockListScreen">
    <bottom>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="© EcoBike 2021" BorderPane.alignment="CENTER">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="© EcoBike 2023" BorderPane.alignment="CENTER">
          <font>
             <Font size="14.0" />
          </font>

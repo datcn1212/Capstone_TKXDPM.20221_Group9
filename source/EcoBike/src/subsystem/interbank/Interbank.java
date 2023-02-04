@@ -5,7 +5,7 @@ import subsystem.interbank.api.ProcessTransaction;
 import subsystem.interbank.api.ResetTransaction;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class Interbank implements IInterbank {

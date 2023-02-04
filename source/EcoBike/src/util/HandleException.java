@@ -3,7 +3,7 @@ package util;
 import exception.*;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class HandleException {

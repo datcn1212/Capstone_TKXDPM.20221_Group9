@@ -3,7 +3,7 @@ package controller;
 import entity.data.PaymentTransactionDAO;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class CardController {

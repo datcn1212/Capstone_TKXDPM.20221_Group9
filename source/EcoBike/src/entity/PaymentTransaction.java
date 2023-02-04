@@ -3,7 +3,7 @@ package entity;
 import entity.data.PaymentTransactionDAO;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class PaymentTransaction {

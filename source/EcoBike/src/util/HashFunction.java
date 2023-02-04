@@ -11,7 +11,7 @@ import com.google.gson.JsonParser;
 import entity.InterbankTransaction;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class HashFunction {

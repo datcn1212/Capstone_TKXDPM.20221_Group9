@@ -11,7 +11,7 @@ import util.HTTPBinder;
 import util.HashFunction;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class ProcessTransaction implements Message {

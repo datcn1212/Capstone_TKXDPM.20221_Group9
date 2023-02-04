@@ -18,7 +18,7 @@ import entity.RentBikeInvoice;
 import entity.data.RentBikeInvoiceDAO;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class RentBikeController {

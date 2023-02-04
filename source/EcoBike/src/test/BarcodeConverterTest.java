@@ -12,7 +12,7 @@ import subsystem.barcodeconverter.BarcodeConverter;
  * NOTE: This test is currently not available since there is no API barcode
  * documentation Will be edit soon
  * 
- * @author hdb
+ * @author baonn
  *
  */
 class BarcodeConverterTest {
@@ -27,14 +27,14 @@ class BarcodeConverterTest {
 	 * String, String barcode, expected bike code
 	 */
 	@ParameterizedTest
-	@CsvSource({ "20210000, 20210000",
-		         "20210001, 20210001",
-		         "20210002, 20210002",
-		         "20210003, 20210003",
-		         "20210004, 20210004",
-		         "20210005, 20210005",
-		         "20210006, 20210006",
-		         "20210007, 20210007"     
+	@CsvSource({ "20230000, 20230000",
+		         "20230001, 20230001",
+		         "20230002, 20230002",
+		         "20230003, 20230003",
+		         "20230004, 20230004",
+		         "20230005, 20230005",
+		         "20230006, 20230006",
+		         "20230007, 20230007"     
 	})
 	public void testBarcodeConverter(int barcode, int expected) {
 //		assertEquals(barcodeConverter.convertBarcodeToBikeCode(barcode), expected);

@@ -1,7 +1,7 @@
 package entity;
 
 /**
- * @author hdb
+ * @author baonn
  * This class is to use for patching package to API server, NOT TO STORE in database
  */
 public class InterbankTransaction {

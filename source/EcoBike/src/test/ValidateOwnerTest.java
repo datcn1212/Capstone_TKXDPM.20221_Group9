@@ -7,7 +7,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import controller.CardController;
-
+/**
+ * 
+ * @author baonn
+ *
+ */
 class ValidateOwnerTest {
 	@BeforeEach
 	void setUp() throws Exception {

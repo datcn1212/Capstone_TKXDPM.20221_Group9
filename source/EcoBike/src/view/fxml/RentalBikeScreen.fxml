@@ -15,7 +15,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: Green;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.RentalBikeScreen">
    <bottom>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="© EcoBike 2021" textAlignment="CENTER" wrappingWidth="306.1025390625" BorderPane.alignment="CENTER">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="© EcoBike 2023" textAlignment="CENTER" wrappingWidth="306.1025390625" BorderPane.alignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
@@ -74,7 +74,7 @@
                            <font>
                               <Font name="Calibri" size="18.0" />
                            </font></Label>
-                        <Label fx:id="bikeCode" text="20210000" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <Label fx:id="bikeCode" text="20230000" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <font>
                               <Font name="Calibri" size="18.0" />
                            </font>

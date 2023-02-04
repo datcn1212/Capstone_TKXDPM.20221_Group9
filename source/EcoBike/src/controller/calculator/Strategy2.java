@@ -1,7 +1,11 @@
 package controller.calculator;
 
 import entity.Bike;
-
+/**
+ * A class to handle calculating rent bike cost
+ * @author baonn
+ *
+ */
 public class Strategy2 implements Calculator {
 
 	@Override

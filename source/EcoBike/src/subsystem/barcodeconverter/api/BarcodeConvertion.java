@@ -5,7 +5,7 @@ import com.google.gson.JsonObject;
 import util.HTTPBinder;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class BarcodeConvertion implements Message {

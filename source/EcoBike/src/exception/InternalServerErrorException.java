@@ -1,7 +1,7 @@
 package exception;
 
 /**
- * @author hdb
+ * @author baonn
  *
  */
 public class InternalServerErrorException extends RuntimeException {
