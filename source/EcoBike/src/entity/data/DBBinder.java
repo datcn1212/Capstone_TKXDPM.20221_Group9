@@ -7,7 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 /**
- * @author baonn
+ * @author datcn
  *
  */
 public class DBBinder {
@@ -23,12 +23,7 @@ public class DBBinder {
 		Connection conn = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			try {
-				conn = DriverManager.getConnection(DB_URL, USER_NAME, PASSWORD);
-			}
-			catch (Exception ex) {
-				conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/ecobike", "root", "123456");
-			}
+			conn = DriverManager.getConnection(DB_URL, USER_NAME, PASSWORD);
 			System.out.println("connect successfully!");
 		} catch (Exception ex) {
 			System.out.println("connect failure!");
@@ -37,31 +32,26 @@ public class DBBinder {
 		return conn;
 	}
 
-	/**
-	 * @param command: command to do in sql server
-	 */
+
 	public static void execute(String command) {
 		System.out.println("Executing command: \n" + command);
 		try {
 			Statement stmt = connection.createStatement();
 			stmt.execute(command);
 			System.out.println("Successfully execute command: " + command);
-		} catch (Exception e) {
+		} catch (Exception ex) {
 			System.out.println("Fail to execute command: \n" + command);
-			e.printStackTrace();
+			ex.printStackTrace();
 		}
 	}
 
-	/**
-	 * @param command query to do in sql server
-	 * @return result
-	 */
+
 	public static ArrayList<ArrayList<String>> query(String command) {
 		System.out.println("Executing query: \n" + command);
 		try {
 			ArrayList<ArrayList<String>> queryResults = new ArrayList<>();
-			Statement stmt = connection.createStatement();
-			ResultSet rs = stmt.executeQuery(command);
+			Statement stm = connection.createStatement();
+			ResultSet rs = stm.executeQuery(command);
 			int numberOfColumn = rs.getMetaData().getColumnCount();
 			while (rs.next()) {
 				ArrayList<String> s = new ArrayList<>();

@@ -26,13 +26,13 @@ public class Lobby {
 	 */
 	public void handleMainScreenClick() {
 		try {
-			System.out.println("user click on getting started");
+			System.out.println("Click getting started!");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.MAIN));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.setScene(new Scene(root));
-			stage.setTitle("MainScreen");
+			stage.setTitle("MAIN SCREEN");
 			stage.show();
 			Stage oldStage = (Stage) closeButton.getScene().getWindow();
 			oldStage.close();
