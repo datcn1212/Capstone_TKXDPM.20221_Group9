@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="800.0" style="-fx-background-color: #1fd18d;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.MainScreen">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="800.0" style="-fx-background-color: #00a13f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.MainScreen">
    <bottom>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="© EcoBike 2023" BorderPane.alignment="CENTER">
          <font>
@@ -37,7 +37,7 @@
                   <Region prefHeight="26.0" prefWidth="2.0" />
                   <AnchorPane prefHeight="200.0" prefWidth="780.0">
                      <children>
-                        <ImageView fitHeight="146.0" fitWidth="382.0" layoutX="199.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="146.0" fitWidth="382.0" layoutX="317.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../images/logo.png" />
                            </image>
@@ -51,49 +51,49 @@
             </HBox>
             <AnchorPane prefHeight="384.0" prefWidth="800.0">
                <children>
-                  <Button fx:id="rentBikeButton" layoutX="264.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleRentButtonClick" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: LIME;" text="Rent a bike">
+                  <Button fx:id="rentBikeButton" layoutX="200.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleRentButtonClick" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: LIME;" text="Rent a bike">
                      <font>
-                        <Font name="Calibri Bold" size="11.0" />
+                        <Font name="Calibri Bold" size="17.0" />
                      </font></Button>
-                  <Button fx:id="returnBikeButton" layoutX="262.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleReturnButtonClick" prefHeight="4.0" prefWidth="93.0" style="-fx-background-color: LIME;" text="Return a bike">
+                  <Button fx:id="returnBikeButton" layoutX="200.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleReturnButtonClick" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: LIME;" text="Return a bike">
                      <font>
-                        <Font name="Calibri Bold" size="11.0" />
+                        <Font name="Calibri Bold" size="17.0" />
                      </font></Button>
-                  <Button fx:id="viewDockListButton" layoutX="256.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleViewDockListClick" prefHeight="20.0" prefWidth="96.0" style="-fx-background-color: LIME;" text="View Dock List">
+                  <Button fx:id="viewDockListButton" layoutX="200.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleViewDockListClick" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: LIME;" text="View Dock List">
                      <font>
-                        <Font name="Calibri Bold" size="11.0" />
+                        <Font name="Calibri Bold" size="17.0" />
                      </font></Button>
-                  <Button fx:id="viewRentalBikeButton" layoutX="231.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleViewRentalBikeClick" style="-fx-background-color: LIME;" text="View current bike information">
+                  <Button fx:id="viewRentalBikeButton" layoutX="200.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleViewRentalBikeClick" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: LIME;" text="View current bike information">
                      <font>
-                        <Font name="Calibri Bold" size="11.0" />
+                        <Font name="Calibri Bold" size="17.0" />
                      </font></Button>
-                  <Button layoutX="270.0" layoutY="301.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="68.0" style="-fx-background-color: LIME;" text="Lock bike">
+                  <Button layoutX="200.0" layoutY="335.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: LIME;" text="Lock bike">
                      <font>
-                        <Font name="Calibri Bold" size="11.0" />
+                        <Font name="Calibri Bold" size="17.0" />
                      </font></Button>
-                  <ImageView fitHeight="77.0" fitWidth="92.0" layoutX="457.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="77.0" fitWidth="92.0" layoutX="500.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../images/rent.jpg" />
+                        <Image url="@../../../images/rentbike.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="76.0" fitWidth="86.0" layoutX="461.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="76.0" fitWidth="86.0" layoutX="500.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../images/return.jpg" />
+                        <Image url="@../../../images/returnbike.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="73.0" fitWidth="76.0" layoutX="462.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="67.0" fitWidth="68.0" layoutX="500.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../images/dock.jpg" />
+                        <Image url="@../../../images/dock.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="73.0" fitWidth="75.0" layoutX="467.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="66.0" fitWidth="67.0" layoutX="500.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../images/bike.jpg" />
+                        <Image url="@../../../images/bike.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="69.0" fitWidth="74.0" layoutX="471.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="74.0" layoutX="500.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../images/lock.jpg" />
+                        <Image url="@../../../images/lock.png" />
                      </image>
                   </ImageView>
                </children>

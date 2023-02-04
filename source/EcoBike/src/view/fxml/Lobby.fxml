@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: #48a890;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.Lobby">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: #00a13f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.Lobby">
    <top>
       <HBox spacing="8.0" BorderPane.alignment="CENTER">
          <children>
@@ -34,22 +34,16 @@
    <center>
       <AnchorPane prefHeight="640.0" prefWidth="720.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="closeButton" layoutX="247.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleMainScreenClick" prefHeight="83.0" prefWidth="226.0" style="-fx-background-color: #b63a3a;" text="Getting started">
+            <Button fx:id="closeButton" layoutX="247.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleMainScreenClick" prefHeight="83.0" prefWidth="226.0" style="-fx-background-color: #fb4b4b;" text="Getting started" textFill="#127904">
                <font>
                   <Font name="Calibri" size="25.0" />
                </font>
             </Button>
-            <ImageView fitHeight="280.0" fitWidth="320.0" layoutX="200.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="335.0" fitWidth="372.0" layoutX="193.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/logo.png" />
                </image>
             </ImageView>
-            <TextFlow layoutX="236.0" layoutY="348.0" prefHeight="41.0" prefWidth="286.0" textAlignment="CENTER" />
-            <Text layoutX="230.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Green bike. Green life. Green health" textAlignment="CENTER" wrappingWidth="259.9565887451172">
-               <font>
-                  <Font name="Bookman Old Style" size="25.0" />
-               </font>
-            </Text>
          </children>
       </AnchorPane>
    </center>

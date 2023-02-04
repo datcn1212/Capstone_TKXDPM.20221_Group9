@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -11,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: Green;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.RentBikeInfoScreen">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: #00a13f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.RentBikeInfoScreen">
    <bottom>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="© EcoBike 2023" textAlignment="CENTER" wrappingWidth="306.1025390625" BorderPane.alignment="CENTER">
          <font>
@@ -25,28 +30,28 @@
    <left>
       <VBox prefHeight="474.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane prefHeight="575.0" prefWidth="547.0" style="-fx-background-color: green;">
+            <AnchorPane prefHeight="575.0" prefWidth="547.0" style="-fx-background-color: #00a13f;">
                <children>
                   <Label alignment="CENTER" layoutX="1.0" prefHeight="69.0" prefWidth="720.0" style="-fx-background-color: Green;" text="Rent Bike Detail Information">
                      <font>
-                        <Font name="Calibri" size="32.0" />
+                        <Font name="Calibri" size="40.0" />
                      </font>
                   </Label>
-                  <Button fx:id="confirmButton" layoutX="420.0" layoutY="531.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="42.0" style="-fx-background-color: LIME;" text="Yes">
+                  <Button fx:id="confirmButton" layoutX="322.0" layoutY="520.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="62.0" style="-fx-background-color: LIME;" text="Yes">
                      <font>
-                        <Font name="Calibri Bold" size="12.0" />
+                        <Font name="Calibri Bold" size="20.0" />
                      </font></Button>
                   <Text layoutX="39.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you want to rent?" wrappingWidth="267.515625">
                      <font>
-                        <Font size="18.0" />
+                        <Font size="20.0" />
                      </font>
                   </Text>
-                  <Button fx:id="backButton" layoutX="540.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleBackButtonClick" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: LIME;" text="Back">
+                  <Button fx:id="backButton" layoutX="454.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleBackButtonClick" prefHeight="41.0" prefWidth="61.0" style="-fx-background-color: LIME;" text="Back">
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
                      <font>
-                        <Font name="Calibri Bold" size="12.0" />
+                        <Font name="Calibri Bold" size="20.0" />
                      </font>
                   </Button>
                   <ListView fx:id="bikeInfo" layoutX="113.0" layoutY="92.0" prefHeight="392.0" prefWidth="496.0" style="-fx-border-width: 3; -fx-background-color: CYAN; -fx-border-color: RED; -fx-font-weight: bold; -fx-font-family: Calibri;" />
