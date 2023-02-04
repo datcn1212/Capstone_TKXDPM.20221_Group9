@@ -14,21 +14,15 @@ import util.Constants;
  * Main app
  */
 public class App extends Application {
-	/**
-	 * Start the application
-	 */
+
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource(Constants.LOBBY));
-		primaryStage.setTitle("EcoBike");
+		primaryStage.setTitle("ECOBIKE");
 		primaryStage.setScene(new Scene(root));
 		primaryStage.show();
 	}
 
-	/**
-	 * Main program
-	 * @param args: arguments
-	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
