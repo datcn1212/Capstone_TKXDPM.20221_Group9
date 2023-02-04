@@ -26,7 +26,7 @@ public class Lobby {
 	 */
 	public void handleMainScreenClick() {
 		try {
-			System.out.println("Click on getting started!");
+			System.out.println("Click getting started!");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.MAIN));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();
