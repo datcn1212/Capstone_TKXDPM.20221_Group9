@@ -5,7 +5,7 @@ import javafx.util.Pair;
 import subsystem.barcodeconverter.*;
 
 /**
- * @author duydc
+ * @author hdb
  *
  */
 public class BarcodeController {

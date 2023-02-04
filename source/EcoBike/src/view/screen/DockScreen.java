@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 import util.Constants;
 
 /**
- * @author longld
+ * @author hdb
  *
  */
 public class DockScreen {

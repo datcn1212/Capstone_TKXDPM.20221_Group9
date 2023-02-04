@@ -1,7 +1,7 @@
 package exception;
 
 /**
- * @author anvd
+ * @author hdb
  *
  */
 public class NotEnoughBalanceException extends RuntimeException {

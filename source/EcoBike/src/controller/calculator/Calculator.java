@@ -3,7 +3,7 @@ package controller.calculator;
 import entity.Bike;
 /**
  * Interface calculator to implement Strategy design pattern
- * @author duydc
+ * @author hdb
  *
  */
 public interface Calculator {

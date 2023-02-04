@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import util.Constants;
 
 /**
- * @author anvd
+ * @author hdb
  *
  */
 public class Lobby {

@@ -1,7 +1,7 @@
 package subsystem.interbank.api;
 
 /**
- * @author anvd
+ * @author hdb
  * Message for Interbank API
  */
 public interface Message {

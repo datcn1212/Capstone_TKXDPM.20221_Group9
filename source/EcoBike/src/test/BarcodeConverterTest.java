@@ -12,7 +12,7 @@ import subsystem.barcodeconverter.BarcodeConverter;
  * NOTE: This test is currently not available since there is no API barcode
  * documentation Will be edit soon
  * 
- * @author anvd
+ * @author hdb
  *
  */
 class BarcodeConverterTest {

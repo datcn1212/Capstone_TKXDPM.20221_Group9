@@ -3,7 +3,7 @@ package subsystem.barcodeconverter;
 import subsystem.barcodeconverter.api.BarcodeConvertion;
 
 /**
- * @author duydc
+ * @author hdb
  *
  */
 public class BarcodeConverter implements IBarcodeConverter{

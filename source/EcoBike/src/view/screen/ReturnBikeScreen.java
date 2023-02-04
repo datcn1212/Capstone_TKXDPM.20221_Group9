@@ -25,7 +25,7 @@ import view.screen.box.ConfirmBox;
 import view.screen.box.NotificationBox;
 
 /**
- * @author duydc
+ * @author hdb
  *
  */
 public class ReturnBikeScreen implements Initializable {
