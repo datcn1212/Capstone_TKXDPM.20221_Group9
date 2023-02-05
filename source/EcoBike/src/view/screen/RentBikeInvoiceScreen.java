@@ -29,7 +29,7 @@ public class RentBikeInvoiceScreen {
 	 * @param rentBikeInvoice
 	 */
 	public void setInvoiceInfo(RentBikeInvoice rentBikeInvoice) {
-		System.out.println("display rentbikeinvoice info");
+		System.out.println("display rentbike invoice information");
 		System.out.println(rentBikeInvoice.getDetail());
 		rentalCode.setText(rentBikeInvoice.getRentalCode());
 		bikeCode.setText(Integer.toString(rentBikeInvoice.getBikeCode()));
@@ -47,13 +47,13 @@ public class RentBikeInvoiceScreen {
 	@FXML
 	public void processOKClick() {
 		try {
-			System.out.println("Click OKButton");
+			System.out.println("Click OK Button");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.MAIN));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.setScene(new Scene(root));
-			stage.setTitle("MainScreen");
+			stage.setTitle("MAIN SCREEN");
 			stage.show();
 			Stage oldStage = (Stage) OK.getScene().getWindow();
 			oldStage.close();

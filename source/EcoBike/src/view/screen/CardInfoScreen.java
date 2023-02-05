@@ -81,12 +81,12 @@ public class CardInfoScreen implements Initializable {
 						try {
 							FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.MAIN));
 							Parent root = (Parent) loader.load();
-							MainScreen mainScreenController = loader.getController();
-							mainScreenController.resetDockInfo();
+							MainScreen MainScreenController = loader.getController();
+							MainScreenController.resetDockInfo();
 							Stage stage = new Stage();
 							stage.initModality(Modality.APPLICATION_MODAL);
 							stage.setScene(new Scene(root));
-							stage.setTitle("MainScreen");
+							stage.setTitle("MAIN SCREEN");
 							stage.show();
 						} catch (IOException ioe) {
 							ioe.printStackTrace();

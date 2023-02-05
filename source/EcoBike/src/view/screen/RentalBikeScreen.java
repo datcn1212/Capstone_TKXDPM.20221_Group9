@@ -88,7 +88,7 @@ public class RentalBikeScreen {
 			Stage stage = new Stage();
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.setScene(new Scene(root));
-			stage.setTitle("MainScreen");
+			stage.setTitle("MAIN SCREEN");
 			stage.show();
 			Stage oldStage = (Stage) OK.getScene().getWindow();
 			oldStage.close();

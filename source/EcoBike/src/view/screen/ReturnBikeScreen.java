@@ -61,6 +61,7 @@ public class ReturnBikeScreen implements Initializable {
 			if (confirmReturnBike) {
 				CreditCard card = getCardInfoForReturnBike();
 				if (card != null) {
+					System.out.println("rentalCode: " + rentalCode );
 					processReturnBike(rentalCode, card, dock);
 				}
 			}
@@ -121,7 +122,7 @@ public class ReturnBikeScreen implements Initializable {
 	 * @param rentBikeInvoice
 	 */
 	private void showRentBikeInvoiceInfo(RentBikeInvoice rentBikeInvoice) {
-		System.out.println("showRentBikeInvoiceInfo");
+		System.out.println("show RentBikeInvoice Infomation");
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.RENT_BIKE_INVOICE));
 			Parent root = loader.load();
@@ -132,7 +133,7 @@ public class ReturnBikeScreen implements Initializable {
 			Stage stage = new Stage();
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.setScene(new Scene(root));
-			stage.setTitle("RentBikeInvoiceInfo");
+			stage.setTitle("RentBike Invoice Information");
 			stage.show();
 
 			Stage oldStage = (Stage) docksView.getScene().getWindow();
@@ -182,13 +183,13 @@ public class ReturnBikeScreen implements Initializable {
 	 */
 	public void handleBackButtonClick() {
 		try {
-			System.out.println("--Click back button--");
+			System.out.println("Click Back!");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.MAIN));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.setScene(new Scene(root));
-			stage.setTitle("MainScreen");
+			stage.setTitle("MAIN SCREEN");
 			stage.show();
 			Stage oldStage = (Stage) backButton.getScene().getWindow();
 			oldStage.close();

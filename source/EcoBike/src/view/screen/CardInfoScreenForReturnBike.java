@@ -57,7 +57,7 @@ public class CardInfoScreenForReturnBike implements Initializable {
 			} else {
 				if (!CardController.validateCardInfo(cardCode.getText(), owner.getText(), ccvCode.getText(),
 						expDate.getText())) {
-					NotificationBox.display("Notification", "Information entered isn't in right format!");
+					NotificationBox.display("Notification", "Information isn't in right format!");
 					HandleException.getException(Constants.INVALID_CARD_INFO);
 				} else {
 					card = new CreditCard(cardCode.getText(), owner.getText(), ccvCode.getText(), expDate.getText());
