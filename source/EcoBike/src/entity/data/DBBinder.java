@@ -27,7 +27,7 @@ public class DBBinder {
 				conn = DriverManager.getConnection(DB_URL, USER_NAME, PASSWORD);
 			}
 			catch (Exception ex) {
-				conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/ecobike", "root", "123456");
+				conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/ecobike", "root", "");
 			}
 			System.out.println("connect successfully!");
 		} catch (Exception ex) {
