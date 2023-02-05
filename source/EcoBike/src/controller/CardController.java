@@ -43,12 +43,8 @@ public class CardController {
 	 * @return right format (true) and otherwise (false)
 	 */
 	public static boolean validateCardCode(String cardCode) {
-		if (cardCode == null)
+		if ((cardCode == null) || (!cardCode.matches("[a-z0-9_]+")))
 			return false;
-
-		if (!cardCode.matches("[a-z0-9_]+")) {
-			return false;
-		}
 		return true;
 	}
 
@@ -59,13 +55,8 @@ public class CardController {
 	 * @return  right format (true) and otherwise (false)
 	 */
 	public static boolean validateOwner(String owner) {
-		if (owner == null)
+		if ((owner == null) || (!owner.matches("[A-Za-z0-9\\s]+")))
 			return false;
-
-		if (!owner.matches("[A-Za-z0-9\\s]+")) {
-			return false;
-		}
-
 		return true;
 	}
 
@@ -76,26 +67,10 @@ public class CardController {
 	 * @return right format (true) and otherwise (false)
 	 */
 	public static boolean validateCcvCode(String cvvCode) {
-		if (cvvCode == null) {
+		if ((cvvCode == null) || (!cvvCode.matches("[0-9]+"))) {
 			return false;
 		}
-		if (cvvCode.length() != 3) {
-			return false;
-		}
-
-		if (!cvvCode.matches("[0-9]+")) {
-			return false;
-		}
-
-		try {
-			int code = Integer.parseInt(cvvCode);
-			if (0 <= code && code <= 999) {
-				return true;
-			} else
-				return false;
-		} catch (NumberFormatException e) {
-			return false;
-		}
+		return true;
 	}
 
 	/**
@@ -105,26 +80,9 @@ public class CardController {
 	 * @return right format (true) and otherwise (false)
 	 */
 	public static boolean validateExpiredDate(String expiredDate) {
-		if (expiredDate == null) {
+		if ((expiredDate == null) || (!expiredDate.matches("[0-9]+"))) {
 			return false;
 		}
-
-		if (!expiredDate.matches("[0-9]+")) {
-			return false;
-		}
-
-		if (expiredDate.length() != 4) {
-			return false;
-		}
-
-		try {
-			int expDate = Integer.parseInt(expiredDate);
-			if (100 <= expDate && expDate <= 1299) {
-				return true;
-			} else
-				return false;
-		} catch (NumberFormatException e) {
-			return false;
-		}
+		return true;
 	}
 }
