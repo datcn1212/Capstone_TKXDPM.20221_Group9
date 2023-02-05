@@ -3,7 +3,7 @@ package entity;
 import java.util.ArrayList;
 
 /**
- * @author baonn
+ * @author haonq
  *
  */
 public class SingleElectricBike extends Bike {

@@ -40,14 +40,14 @@ public class ReturnBikeScreen implements Initializable {
 
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-		System.out.println("Initialize ReturnBikeScreen");
+		System.out.println("Initialize ReturnBike Screen");
 	}
 
 	/**
 	 * double click on dock list
 	 */
 	private void handleDoubleClickOnDockList() {
-		System.out.println("User double click on a dock");
+		System.out.println("Double click on a dock");
 		String dockInfo = docksView.getSelectionModel().getSelectedItem();
 		Dock dock = getDockFromString(dockInfo);
 		assert dock != null;
@@ -57,7 +57,7 @@ public class ReturnBikeScreen implements Initializable {
 			HandleException.getException(Constants.NOT_AVAILABLE);
 		}
 		else {
-			boolean confirmReturnBike = ConfirmBox.display("ConfirmBox", "Do you confirm to return bike to this dock?");
+			boolean confirmReturnBike = ConfirmBox.display("ConfirmBox", "Confirm to return bike to this Dock?");
 			if (confirmReturnBike) {
 				CreditCard card = getCardInfoForReturnBike();
 				if (card != null) {
@@ -75,15 +75,15 @@ public class ReturnBikeScreen implements Initializable {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.CARD_INFO_FOR_RETURN));
 			Parent root = loader.load();
 
-			CardInfoScreenForReturnBike cardInfoScreenForReturnBike = loader.getController();
+			CardInfoScreenForReturnBike CardInfoScreenForReturnBike = loader.getController();
 
 			Stage stageCard = new Stage();
-			stageCard.setTitle("CardInfoForReturnBike");
+			stageCard.setTitle("Card Infomation For Returning Bike");
 			stageCard.setScene(new Scene(root));
-			cardInfoScreenForReturnBike.confirmCard(stageCard);
+			CardInfoScreenForReturnBike.confirmCard(stageCard);
 			stageCard.showAndWait();
 
-			CreditCard card = cardInfoScreenForReturnBike.getCardInfo();
+			CreditCard card = CardInfoScreenForReturnBike.getCardInfo();
 
 			return card;
 		} catch (Exception e) {

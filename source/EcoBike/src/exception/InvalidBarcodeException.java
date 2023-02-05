@@ -1,7 +1,7 @@
 package exception;
 
 /**
- * @author baonn
+ * @author datcn
  *
  */
 public class InvalidBarcodeException extends RuntimeException {

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import entity.data.DockDAO;
 
 /**
- * @author baonn
+ * @author haonq
  *
  */
 public class Dock {

@@ -3,7 +3,7 @@ package entity;
 import entity.data.RentBikeInvoiceDAO;
 
 /**
- * @author baonn
+ * @author haonq
  *
  */
 public class RentBikeInvoice {

@@ -1,7 +1,7 @@
 package exception;
 
 /**
- * @author baonn
+ * @author datcn
  *
  */
 public class InvalidTransactionAmountException extends RuntimeException {

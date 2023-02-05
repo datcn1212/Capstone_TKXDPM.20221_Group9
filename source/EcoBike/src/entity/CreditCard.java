@@ -1,7 +1,7 @@
 package entity;
 
 /**
- * @author baonn
+ * @author haonq
  *
  */
 public class CreditCard extends GenericCard{

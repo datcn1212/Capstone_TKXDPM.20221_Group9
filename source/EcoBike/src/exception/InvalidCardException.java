@@ -2,7 +2,7 @@ package exception;
 
 
 /**
- * @author baonn
+ * @author datcn
  *
  */
 public class InvalidCardException extends RuntimeException {
