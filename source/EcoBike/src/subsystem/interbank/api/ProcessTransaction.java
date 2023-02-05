@@ -43,12 +43,12 @@ public class ProcessTransaction implements Message {
 	/**
 	 * URL for API
 	 */
-	private static final String URL = "https://ecopark-system-api.herokuapp.com/api/card/processTransaction";
+	private static final String URL = "";
 	/**
 	 * Version for API
 	 */
 	@SuppressWarnings("unused")
-	private static final String VERSION = "1.0.1";
+	private static final String VERSION = "0.1";
 
 	/**
 	 * construction
@@ -80,7 +80,7 @@ public class ProcessTransaction implements Message {
 			JsonObject transaction = new JsonParser().parse(transact).getAsJsonObject();
 			String hashCode = HashFunction.hashTransaction(Constants.SECRET_KEY, interbankTransaction).toString();
 
-			message.addProperty("version", "1.0.1");
+			message.addProperty("version", "0.1");
 			message.add("transaction", transaction);
 			message.addProperty("appCode", Constants.APP_CODE);
 			message.addProperty("hashCode", hashCode);
