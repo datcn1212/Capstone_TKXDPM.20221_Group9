@@ -67,13 +67,18 @@ public class CardController {
 	 * @return right format (true) and otherwise (false)
 	 */
 	public static boolean validateCcvCode(String cvvCode) {
-		if ((cvvCode == null) || (!cvvCode.matches("[0-9]+"))) {
+		if ((cvvCode == null) || (!cvvCode.matches("[0-9]+")) || (cvvCode.length() != 3)) {
 			return false;
 		}
-		if (cvvCode.length() == 3)
-			return true;
-		else 
+		try {
+			int code = Integer.parseInt(cvvCode);
+			if (0 <= code && code <= 999) {
+				return true;
+			} else
+				return false;
+		} catch (NumberFormatException e) {
 			return false;
+		}
 	}
 
 	/**
@@ -83,9 +88,17 @@ public class CardController {
 	 * @return right format (true) and otherwise (false)
 	 */
 	public static boolean validateExpiredDate(String expiredDate) {
-		if ((expiredDate == null) || (!expiredDate.matches("[0-9]+"))) {
+		if ((expiredDate == null) || (!expiredDate.matches("[0-9]+")) || (expiredDate.length() != 4)) {
 			return false;
 		}
-		return true;
+		try {
+			int expDate = Integer.parseInt(expiredDate);
+			if (100 <= expDate && expDate <= 1299) {
+				return true;
+			} else
+				return false;
+		} catch (NumberFormatException e) {
+			return false;
+		}
 	}
 }
