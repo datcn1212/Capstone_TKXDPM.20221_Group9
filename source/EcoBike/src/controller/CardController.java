@@ -70,7 +70,10 @@ public class CardController {
 		if ((cvvCode == null) || (!cvvCode.matches("[0-9]+"))) {
 			return false;
 		}
-		return true;
+		if (cvvCode.length() == 3)
+			return true;
+		else 
+			return false;
 	}
 
 	/**
