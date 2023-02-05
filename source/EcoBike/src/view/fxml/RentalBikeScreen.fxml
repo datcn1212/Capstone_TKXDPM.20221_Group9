@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: #00a13f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.screen.RentalBikeScreen">
+   <bottom>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="© EcoBike 2023" textAlignment="CENTER" wrappingWidth="306.1025390625" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Text>
+   </bottom>
+   <left>
+      <VBox prefHeight="474.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="575.0" prefWidth="547.0" style="-fx-background-color: #00a13f;">
+               <children>
+                  <Label alignment="CENTER" layoutX="1.0" prefHeight="74.0" prefWidth="720.0" style="-fx-background-color: Green;" text="Rental Bike Information">
+                     <font>
+                        <Font name="Calibri" size="39.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="OK" layoutX="577.0" layoutY="531.0" mnemonicParsing="false" onAction="#processOKClick" prefHeight="22.0" prefWidth="58.0" style="-fx-background-color: LIME;" text="OK">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font></Button>
+                  <GridPane layoutX="173.0" layoutY="147.0" prefHeight="337.0" prefWidth="548.0" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="147.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="262.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="355.0" minWidth="10.0" prefWidth="355.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="81.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bike ID:" wrappingWidth="134.484375" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type:" wrappingWidth="132.234375" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rent duration:" wrappingWidth="233.0078125" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rent cost :" wrappingWidth="187.8828125" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font></Text>
+                        <Label GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font></Label>
+                        <Label fx:id="bikeCode" text="20230000" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="type" text="single-normal" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rentCost" text="100000" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Remain battery:" wrappingWidth="175.234375" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="remainBattery" text="none" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rentDuration" text="rent duration" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Calibri" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Text layoutX="39.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Information" textAlignment="CENTER" wrappingWidth="267.515625">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <Region prefHeight="0.0" prefWidth="385.0" style="-fx-background-color: #ffbf00;" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label text="Label" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
