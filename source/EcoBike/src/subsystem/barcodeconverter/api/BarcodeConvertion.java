@@ -16,7 +16,7 @@ public class BarcodeConvertion implements Message {
 	/**
 	 * url to barcode API
 	 */
-	public final static String URL = "https://barcodeservicebykv2.herokuapp.com/barcode";
+	public final static String URL = "";
 
 	/**
 	 * construction

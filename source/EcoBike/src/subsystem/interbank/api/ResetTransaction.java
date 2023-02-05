@@ -17,7 +17,7 @@ public class ResetTransaction implements Message {
 	/**
 	 * URL for Interbank API
 	 */
-	public final static String URL = "https://ecopark-system-api.herokuapp.com/api/card/reset-balance";
+	public final static String URL = "";
 
 	/**
 	 * construction
