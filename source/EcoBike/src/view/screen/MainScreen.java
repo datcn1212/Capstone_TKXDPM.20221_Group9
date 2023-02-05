@@ -21,7 +21,7 @@ import util.Constants;
 import view.screen.box.NotificationBox;
 
 /**
- * @author baonn
+ * @author baonn, datcn, haonq
  *
  */
 public class MainScreen implements Initializable {
@@ -55,16 +55,16 @@ public class MainScreen implements Initializable {
 	public void handleRentButtonClick() {
 		try {
 			if (RentBikeController.rentalCode != null) {
-				NotificationBox.display("NotificationBox", "Please return your bike before renting a new one!");
+				NotificationBox.display("NotificationBox", "Please return your rented bike before renting a new one!");
 				return;
 			}
-			System.out.println("user click RentBikeButton");
+			System.out.println("Click RentBike Button");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.RENT_BIKE));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.setScene(new Scene(root));
-			stage.setTitle("RentBikeScreen");
+			stage.setTitle("RENT BIKE");
 			stage.show();
 
 			Stage oldStage = (Stage) rentBikeButton.getScene().getWindow();
@@ -80,11 +80,11 @@ public class MainScreen implements Initializable {
 	 */
 	public void handleReturnButtonClick() {
 		if (RentBikeController.rentalCode == null) {
-			NotificationBox.display("NotificationBox", "Currently you doesn't rent any bike!");
+			NotificationBox.display("NotificationBox", "You don't rent any bike yet!");
 			return;
 		} else {
 			try {
-				System.out.println("user click ReturnBikeButton");
+				System.out.println("Click ReturnBike Button");
 				FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.RETURN_BIKE));
 				Parent root = loader.load();
 				ReturnBikeScreen returnBikeScreen = loader.getController();
@@ -92,7 +92,7 @@ public class MainScreen implements Initializable {
 				Stage stage = new Stage();
 				stage.initModality(Modality.APPLICATION_MODAL);
 				stage.setScene(new Scene(root));
-				stage.setTitle("ReturnBikeScreen");
+				stage.setTitle("RETURN BIKE");
 				stage.show();
 
 				Stage oldStage = (Stage) returnBikeButton.getScene().getWindow();
@@ -108,7 +108,7 @@ public class MainScreen implements Initializable {
 	 */
 	public void handleViewDockListClick() {
 		try {
-			System.out.println("user click View Dock List");
+			System.out.println("Click View Dock List");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.DOCK_LIST));
 			Parent root = (Parent) loader.load();
 			DockListScreen dockListController = loader.getController();
@@ -116,7 +116,7 @@ public class MainScreen implements Initializable {
 			Stage stage = new Stage();
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.setScene(new Scene(root));
-			stage.setTitle("ViewDockList");
+			stage.setTitle("DOCK LIST");
 			stage.show();
 
 			Stage oldStage = (Stage) viewDockListButton.getScene().getWindow();
@@ -132,11 +132,11 @@ public class MainScreen implements Initializable {
 	 */
 	public void handleViewRentalBikeClick() {
 		if (RentBikeController.rentalCode == null) {
-			NotificationBox.display("NotificationBox", "Currently you doesn't rent any bike!");
+			NotificationBox.display("NotificationBox", "You don't rent any bike yet!");
 			return;
 		} else {
 			try {
-				System.out.println("user click View Rental Bike Info");
+				System.out.println("Click View Rental Bike Info");
 				FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.RENTAL_BIKE));
 				Parent root = (Parent) loader.load();
 				RentalBikeScreen rentalBikeController = loader.getController();
@@ -144,7 +144,7 @@ public class MainScreen implements Initializable {
 				Stage stage = new Stage();
 				stage.initModality(Modality.APPLICATION_MODAL);
 				stage.setScene(new Scene(root));
-				stage.setTitle("ViewDockList");
+				stage.setTitle("RENTAL BIKE INFORMATION");
 				stage.show();
 
 				Stage oldStage = (Stage) viewDockListButton.getScene().getWindow();

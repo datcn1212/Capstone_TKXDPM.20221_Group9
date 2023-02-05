@@ -25,7 +25,7 @@ import view.screen.box.ConfirmBox;
 import view.screen.box.NotificationBox;
 
 /**
- * @author baonn
+ * @author datcn
  *
  */
 public class ReturnBikeScreen implements Initializable {
@@ -182,7 +182,7 @@ public class ReturnBikeScreen implements Initializable {
 	 */
 	public void handleBackButtonClick() {
 		try {
-			System.out.println("--user click back button--");
+			System.out.println("--Click back button--");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.MAIN));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();

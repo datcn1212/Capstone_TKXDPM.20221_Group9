@@ -14,6 +14,10 @@ import util.Constants;
 import util.HandleException;
 import view.screen.box.NotificationBox;
 
+/**
+ * @author datcn
+ *
+ */
 public class CardInfoScreenForReturnBike implements Initializable {
 	/**
 	 * card

@@ -84,7 +84,7 @@ public class RentBikeInfoScreen implements Initializable {
 	 */
 	public void handleBackButtonClick() {
 		try {
-			System.out.println("user click BackButton");
+			System.out.println("Click BackButton");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.RENT_BIKE));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();

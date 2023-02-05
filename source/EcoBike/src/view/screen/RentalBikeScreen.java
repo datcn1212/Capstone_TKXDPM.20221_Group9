@@ -82,7 +82,7 @@ public class RentalBikeScreen {
 	@FXML
 	public void processOKClick() {
 		try {
-			System.out.println("user click OKButton");
+			System.out.println("Click OKButton");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.MAIN));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();

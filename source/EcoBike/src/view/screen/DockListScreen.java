@@ -88,7 +88,7 @@ public class DockListScreen {
 	 */
 	public void handleBackButtonClick() {
 		try {
-			System.out.println("user click BackButton");
+			System.out.println("Click BackButton");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.MAIN));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();

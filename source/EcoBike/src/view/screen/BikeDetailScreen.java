@@ -54,7 +54,7 @@ public class BikeDetailScreen {
 	 */
 	public void handleBackButtonClick() {
 		try {
-			System.out.println("user click BackButton");
+			System.out.println("Click BackButton");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.DOCK));
 			Parent root = (Parent) loader.load();
 			DockScreen dockScreen = loader.getController();

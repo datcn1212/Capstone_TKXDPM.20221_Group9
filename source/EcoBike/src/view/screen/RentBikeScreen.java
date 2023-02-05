@@ -81,7 +81,7 @@ public class RentBikeScreen {
 	 */
 	public void handleBackButtonClick() {
 		try {
-			System.out.println("user click Back Button");
+			System.out.println("Click Back Button");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.MAIN));
 			Parent root = (Parent) loader.load();
 			Stage stage = new Stage();
