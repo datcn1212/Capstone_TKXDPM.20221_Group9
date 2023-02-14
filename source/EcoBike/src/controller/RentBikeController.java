@@ -1,8 +1,10 @@
 package controller;
 
+
 import subsystem.interbank.IInterbank;
 import subsystem.interbank.Interbank;
 import util.*;
+import java.util.Random;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -30,7 +32,7 @@ public class RentBikeController {
 	/**
 	 * static counter for rental code
 	 */
-	public static int rentalCounter = 0;
+	public static int rentalCounter = (new Random()).nextInt(100);
 
 	/**
 	 * Process a rent by passing card and bike arguments
@@ -51,7 +53,7 @@ public class RentBikeController {
 		Date date = calendar.getTime();
 		DateFormat daytime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-		rentalCode = convertBikeCodeToRentalCode(bike.getBikeID());
+		
 		int deposit = bike.calculateDeposit();
 		IInterbank interbank = new Interbank();
 		String code = interbank.processTransaction(card, deposit, "Transaction for a rent", daytime.format(date),
@@ -60,7 +62,18 @@ public class RentBikeController {
 		if (code.equals(Constants.SUCCESS)) {
 			// updateRentBikeStatus(card, bike, deposit, daytime.format(date),
 			// daytime.format(returnDate));
-			updateRentBikeStatus(card, bike, deposit, daytime.format(date), null);
+			boolean flag = true;
+			while(flag) {
+				try {
+					rentalCode = convertBikeCodeToRentalCode(bike.getBikeID());
+					updateRentBikeStatus(card, bike, deposit, daytime.format(date), null);
+					flag = false;
+				}
+				catch(Exception e) {
+					continue;
+				}
+			}
+			
 		} else {
 			HandleException.getException(code);
 		}
